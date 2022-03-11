@@ -1,38 +1,301 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #111111;
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
+  line-height: 1.1;
+  font-size: 70px;
+  font-weight: 300;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-size: 40px;
+  padding: 0 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h4 {
+  padding: 0 55px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+a:link,
+a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+a:hover,
+a:active {
+  border: 2px solid steelblue;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bg-img {
+  max-width: 100%;
+  width: 980px;
+  height: 450px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 0% 125%;
+}
+
+.flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  position: relative;
+  top: -300px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex1 > div {
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.portrait {
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 400px;
+  height: 400px;
+}
+
+.box {
+  font-weight: 550;
+  padding: 120px 30px;
+  line-height: 1.4;
+  font-size: 20px;
+  background: white;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1100px;
+  position: relative;
+  top: -200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.flex2 > div {
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  padding: 0;
+}
+
+.flex2left {
+  text-align: center;
+  padding: 0 50px;
+}
+p {
+  line-height: 1.5;
+}
+
+.building {
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 500px;
+  height: 600px;
+}
+
+.row3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -200px;
+}
+
+.row3text {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row3text > h4 {
+  padding-top: 80px;
+  margin: 0;
+}
+
+.row3 h3 {
+  font-size: 30px;
+}
+
+.flex3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex3 > div {
+  margin: 10px;
+  text-align: center;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+}
+
+.flex4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  top: -100px;
+  padding-bottom: 100px;
+}
+
+.flex4 > div {
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  padding: 0;
+  max-width: 700px;
+}
+
+.portrait2 {
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 400px;
+}
+
+.flex4inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.flex4inner > div {
+  margin: 10px;
+  text-align: center;
+  padding: 0;
+}
+
+.flex5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex5 > div {
+  height: 300px;
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  min-height: 300px;
+  max-height: 25%;
+}
+
+.building2 {
+  object-position: 50% 0;
+}
+
+@media screen and (max-width: 1276px) {
+  .row5,
+  .flex6,
+  .flex7 {
+    position: relative;
+    top: 400px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media screen and (max-width: 856px) {
+  .row5 {
+    top: 700px;
+  }
+}
+
+.row5 {
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row5text {
+  text-align: center;
+  padding: 30px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex6 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.flex6 > div {
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.flex6 h3 {
+  font-size: 30px;
+}
+
+.flex7 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 500px;
+}
+
+.flex7 > div {
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
 }
